@@ -21,6 +21,7 @@
 const jsPsych = initJsPsych({
     use_webaudio:false,
     on_finish: function(){
+        jsPsych.data.displayData();
     },
 });
 
@@ -56,7 +57,7 @@ var preload = {
 };
 
 //basic information collection
-var name_input = {
+/*var name_input = {
     type: jsPsychSurveyText,
     questions: [
       {prompt: "お名前をローマ字で入力してください：（e.g., MeidaiTaro）", name: 'participant_name', required: true}
@@ -68,7 +69,7 @@ var name_input = {
       });
     }
   };
-
+*/
 
 //fullscreen before experiment
 var fullscreen = {
