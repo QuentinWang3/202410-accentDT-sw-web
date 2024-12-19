@@ -64,7 +64,7 @@ var name_input = {
     questions: [
       {prompt: `
       <div style="display: flex; align-items: center;">
-        <span style="white-space: nowrap; margin-right: 10px; font-size: 30px">お名前をローマ字で入力してください：</span>
+        <span style="white-space: nowrap; margin-right: 10px; font-size: 30px; line-height: 1.5">お名前をローマ字で入力してください：</span>
       </div>`, placeholder: "Yamada Taro", name: 'participant_name', required: true}
     ],
     on_finish: function(data) {
@@ -398,7 +398,7 @@ var word_response = {
 };
 
 var word_trial = {
-    timeline: [fixation, sti_content, sound1, delay, sound2, sent_response],
+    timeline: [fixation, sti_content, sound1, delay, sound2, word_response],
     timeline_variables: word_timeline_variable,
     randomize_order: true,
 };
