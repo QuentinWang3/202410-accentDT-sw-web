@@ -107,7 +107,7 @@ var instruction_1 = {
     type: jsPsychHtmlButtonResponse,
     stimulus: `
     <h1>
-    インストラクション
+    インストラクション：この実験では何をするの？
     </h1>
     <div>
     <p style="width:100%">
@@ -152,13 +152,13 @@ var instruction_3 = {
     type: jsPsychHtmlButtonResponse,
     stimulus: `
     <h1>
-    実験に関するご説明
+    インストラクション：実験の手順に関するご説明
     </h1>
     <div>
     <p>
     音声は常に凝視点（＋）の直後に流されますので、凝視点（＋）が提示されたら、必ずそのポイントに注目してください。
 
-    この発音知覚実験はおおむね４０分程度で終了の予定ですが、途中で休憩ポイントが1回あります。
+    この発音知覚実験はおおむね５０分程度で終了の予定ですが、途中で休憩ポイントが1回あります。
     休憩ポイントでは遠慮なく休憩してください（例：目を閉じるや深呼吸等）。
 
     ボタンを早く押すために、常に[ F ]と[ J ]のキーの上に指を置いてください。
@@ -335,7 +335,7 @@ var main_trial = {
 var ending = {
     type: jsPsychHtmlButtonResponse,
     stimulus: `
-    <h1 style="text-align:left; width:100%;">
+    <h1 style="text-align:left; ">
     ご協力ありがとうございます。大変お疲れ様です。
     実験はこれで終わります。
     </h1>
