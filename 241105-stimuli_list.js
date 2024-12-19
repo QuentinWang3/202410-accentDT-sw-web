@@ -1628,7 +1628,7 @@ var sent_timeline_variable = [
   {
     "List": "HINT",
     "ListID": "List 5",
-    "Content": "The grocer sells butter.",
+    "Content": "The grocery sells butter.",
     "ListNo": 4,
     "SentenceID": 136,
     "Sound1": "stimuli/FAS_K9M-HINT-05-04.wav",

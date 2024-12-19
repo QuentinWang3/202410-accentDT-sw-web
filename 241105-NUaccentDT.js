@@ -147,7 +147,7 @@ var instruction_2 = {
 
     つまり、「違う訛りの英語発音ペア」というのは母語話者と非母語話者の英語発音ペア、あるいはA母語の非母語話者とB母語の非母語話者の英語発音ペアです。
 
-    上記の内容が理解できましたら、下のボタンを押すと、実験に関する説明に入ります。
+    上記の内容が理解できましたら、下のボタンを押すと、実験の手順に関する説明に入ります。
     </p>
     `,
     choices: ['理解できました、次のページへ'],
@@ -301,7 +301,7 @@ var sent_response = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:  function() {
         return `
-        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        <p style= "white-space: nowrap;text-align: center; padding: 20px; background-color: lightgray;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>
     <p style="width: 100%"> 
@@ -351,35 +351,18 @@ var breaktime = {
     </p>
     `,
     choices: ['休憩完了です。'],
-    trial_duration: 300000, // 5 分钟 = 300,000 毫秒
-    on_load: function() {
-      // 开始倒计时
-      var countdownElement = document.getElementById('countdown');
-      var timeLeft = 300; // 5 分钟倒计时，以秒为单位
-  
-      var timer = setInterval(function() {
-        var minutes = Math.floor(timeLeft / 60);
-        var seconds = timeLeft % 60;
-        countdownElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
-        
-        if (timeLeft <= 0) {
-          clearInterval(timer);
-        } else {
-          timeLeft -= 1;
-        }
-      }, 1000);
-    }
+    trial_duration: 300000, // 5mins
+    response_ends_trial:true,
 };
 
 //after break
 var after_break = {
     type: jsPsychHtmlButtonResponse,
     stimulus: `
-    <h1>
+    <h1 style="width:100%">
     実験に戻りましょう！
     </h1>`,
     choices: ['続けます！'],
-    response_ends_trial: true,
 };
 
 
@@ -388,7 +371,7 @@ var word_response = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:  function() {
         return `
-        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        <p style= "white-space: nowrap;text-align: center; padding: 20px; background-color: lightgray;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>
     <p style="width: 100%"> 
