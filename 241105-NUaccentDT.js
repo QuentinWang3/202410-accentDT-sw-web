@@ -57,7 +57,7 @@ var preload = {
 };
 
 //basic information collection
-/*var name_input = {
+var name_input = {
     type: jsPsychSurveyText,
     questions: [
       {prompt: "お名前をローマ字で入力してください：（e.g., MeidaiTaro）", name: 'participant_name', required: true}
@@ -69,7 +69,7 @@ var preload = {
       });
     }
   };
-*/
+
 
 //fullscreen before experiment
 var fullscreen = {
@@ -184,18 +184,50 @@ var fixation = {
     trial_duration: 1000
 };
 
+//stimuli content 
+var sti_content_prac = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus:  function() {
+        return `
+        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        </p>`;
+    },
+    choices: "NO_KEYS",
+    trial_duration: 500,
+};
+
 //play sound1 in prac
 var prac_sound1 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: jsPsych.timelineVariable('Sound1'),
     choices: 'NO_KEYS',
-    prompt: `
-    <h1>練習：訛りの発音を聞いてください</h1>    
-    <div>
+    prompt: function() {
+        return `
+        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        </p>
+    <h1>練習：訛りの発音を聞いてください</h1>
     <p style="width: 100%"> 
     違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
-    </p>`,
-    trial_ends_after_audio: true
+    </p>`},
+    trial_ends_after_audio: true,
+};
+
+//Delay in prac
+var delay = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus:function() {
+        return `
+        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        </p>
+    <h1>練習：訛りの発音を聞いてください</h1>    
+    <p style="width: 100%"> 
+    違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
+    </p>`},
+    choices: 'NO_KEYS',
+    trial_duration: 500,
 };
 
 //play sound2 in prac
@@ -204,24 +236,30 @@ var prac_sound2 = {
     type:jsPsychAudioKeyboardResponse,
     stimulus: jsPsych.timelineVariable('Sound2'),
     choices: 'NO_KEYS',
-    prompt: `
+    prompt: function() {
+        return `
+        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        </p>
     <h1>練習：訛りの発音を聞いてください</h1>    
-    <div>
     <p style="width: 100%"> 
     違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
-    </p>`,
+    </p>`},
     trial_ends_after_audio: true
 };
 
 //response in prac (mark practice block as "practice" in response)
 var prac_response = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: `
+    stimulus: function() {
+        return `
+        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        </p>
     <h1>練習：弁別してください！</h1>    
-    <div>
     <p style="width: 100%"> 
     違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
-    </p>`,
+    </p>`},
     choices: ['f','j'],
     prompt: `
     <div style="display: flex; justify-content: space-around; margin-top: 20px;">
@@ -243,7 +281,7 @@ var prac_response = {
 
 //timeline of practice session
 var prac_trial = {
-    timeline: [fixation, prac_sound1, prac_sound2, prac_response],
+    timeline: [fixation, sti_content_prac, prac_sound1, delay_prac, prac_sound2, prac_response],
     timeline_variables: prac_timeline_variable,
     randomize_order:true
 };
@@ -257,7 +295,7 @@ var prac_end = {
     練習はこれで終わりです。
     </h1>
     <p>
-    この時点でご質問等ありましたら、研究員にお尋ねください。
+    この時点でご質問等ありましたら、Webページを閉じずに、研究員にお尋ねください。
 
     実験の手順に関してご質問がないようでしたら、下のボタンを押すと、実験が始まります。
     </p>
@@ -266,8 +304,8 @@ var prac_end = {
 };
 
 
-//block 2 - main trial
-var main_sound1 = {
+//block 2 - sentence trial
+var sent_sound1 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: jsPsych.timelineVariable("Sound1"),
     choices: "NO_KEYS", 
@@ -282,7 +320,7 @@ var main_sound1 = {
 };
 
 
-var main_sound2 = {
+var sent_sound2 = {
     type: jsPsychAudioKeyboardResponse,
     stimulus: jsPsych.timelineVariable("Sound2"),
     choices: "NO_KEYS", 
@@ -296,7 +334,7 @@ var main_sound2 = {
     trial_ends_after_audio: true
 };
 
-var main_response = {
+var sent_response = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
     <h1> 実験：弁別してください！ </h1>
@@ -317,15 +355,15 @@ var main_response = {
     `,
     choices: ['f', 'j'],
     data: {
-        phase: "main",
-        itemID: jsPsych.timelineVariable('ItemID'),
+        phase: "sentence",
+        itemID: jsPsych.timelineVariable('SentenceID'),
         stimulus_type: jsPsych.timelineVariable('type'),
         correct_ans: jsPsych.timelineVariable('ExpAns'),
     },
 };
 
-var main_trial = {
-    timeline: [fixation, main_sound1, main_sound2, main_response],
+var sent_trial = {
+    timeline: [fixation, sent_sound1, sent_sound2, sent_response],
     timeline_variables: sent_timeline_variable,
     randomize_order: true,
 };
@@ -360,6 +398,7 @@ var exit_fullscreen = {
 var pavlovia_finish = {
     type: jsPsychPavlovia,
     command: "finish",
+    participantID: participant_name,
 };
 
 
