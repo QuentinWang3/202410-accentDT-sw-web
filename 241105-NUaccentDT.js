@@ -206,10 +206,7 @@ var prac_sound1 = {
         return `
         <p style="text-align: left; background-color: lightgray; padding: 5px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
-        </p>
-    <p style="width: 100%"> 
-    違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
-    </p>`},
+        </p>`},
     trial_ends_after_audio: true,
 };
 
@@ -220,10 +217,7 @@ var delay_prac = {
         return `
         <p style="text-align: left; background-color: lightgray; padding: 5px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
-        </p>
-    <p style="width: 100%"> 
-    違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
-    </p>`},
+        </p>`},
     choices: 'NO_KEYS',
     trial_duration: 500,
 };
@@ -238,10 +232,7 @@ var prac_sound2 = {
         return `
         <p style="text-align: left; background-color: lightgray; padding: 5px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
-        </p>
-    <p style="width: 100%"> 
-    違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
-    </p>`},
+        </p>`},
     trial_ends_after_audio: true
 };
 
