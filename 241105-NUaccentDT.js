@@ -379,6 +379,7 @@ var after_break = {
     実験に戻りましょう！
     </h1>`,
     choices: ['続けます！'],
+    response_ends_trial: true,
 };
 
 
