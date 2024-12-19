@@ -61,7 +61,7 @@ var preload = {
 var name_input = {
     type: jsPsychSurveyText,
     questions: [
-      {prompt: "お名前をローマ字で入力してください：", placeholder: "Meidai Taro", name: 'participant_name', required: true}
+      {prompt: '<span style="display: inline-block; width: auto;">お名前をローマ字で入力してください：</span>', placeholder: "Meidai Taro", name: 'participant_name', required: true}
     ],
     on_finish: function(data) {
       // 将姓名保存到全局数据中
@@ -190,7 +190,7 @@ var sti_content_prac = {
     stimulus:  function() {
         return `
         <div style="text-align: left; padding: 5px; background-color: lightgray; ">
-            <p style= "white-space: nowrap; width: 500px;">
+            <p style= "white-space: nowrap;">
             音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
             </p>
         </div>`;
