@@ -109,8 +109,8 @@ var prac_timeline_variable = [
     "ListID": 0,
     "ListNo": 1,
     "ItemID": 10,
-    "Sound1": "stimuli/FAS_E5M-HINT-00-01.wav",
-    "Sound2": "stimuli/FAS_M6M-HINT-00-01.wav",
+    "Sound1": "stimuli/FAS_E5M-HINT-P1-01.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-P1-01.wav",
     "ExpAns": "f",
     "type": "EM"
   },
@@ -120,8 +120,8 @@ var prac_timeline_variable = [
     "ListID": 0,
     "ListNo": 2,
     "ItemID": 11,
-    "Sound1": "stimuli/FAS_E5M-HINT-00-02.wav",
-    "Sound2": "stimuli/FAS_M6M-HINT-00-02.wav",
+    "Sound1": "stimuli/FAS_E5M-HINT-P1-02.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-P1-02.wav",
     "ExpAns": "f",
     "type": "EM"
   },
@@ -131,8 +131,8 @@ var prac_timeline_variable = [
     "ListID": 0,
     "ListNo": 3,
     "ItemID": 12,
-    "Sound1": "stimuli/FAS_M6M-HINT-00-03.wav",
-    "Sound2": "stimuli/FAS_E5M-HINT-00-03.wav",
+    "Sound1": "stimuli/FAS_M6M-HINT-P1-03.wav",
+    "Sound2": "stimuli/FAS_E5M-HINT-P1-03.wav",
     "ExpAns": "f",
     "type": "EM"
   }
