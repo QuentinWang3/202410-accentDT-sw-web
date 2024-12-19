@@ -136,7 +136,7 @@ var instruction_2 = {
     <h1>
     インストラクション：訛りの発音とは？
     </h1>
-    <p style="width:100%;">
+    <p>
     以下の内容に対するご理解は、本実験の結果に重要な影響がありますので、読んでいただけますよう、よろしくお願いいたします。
 
     本実験では、「訛り」というのは、母語話者の発音のバリエーションではなく、母語が異なる話者が持つ「母語訛り」のことを指しています。母語話者の発音は地域によって、多くのバリエーションが存在しますが、本研究が重視しているのは母語話者と非母語話者の英語発音の違い、かつ母語が異なる非母語話者間の違いです。
@@ -189,9 +189,11 @@ var sti_content_prac = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:  function() {
         return `
-        <h1 style="text-align: left; background-color: lightgray; padding: 10px;">
-        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
-        </h1>`;
+        <div style="text-align: left; margin-left: 0; padding: 10px; background-color: lightgray; width: fit-content;">
+            <h1 style="margin: 0;">
+                音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+            </h1>
+        </div>`;
     },
     choices: "NO_KEYS",
     trial_duration: 500,
