@@ -189,10 +189,9 @@ var sti_content_prac = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:  function() {
         return `
-        <div style="text-align: left; margin-left: 0; padding: 10px; background-color: lightgray; width: fit-content;">
-            <h1 style="margin: 0;">
-                音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
-            </h1>
+        <div style="text-align: left; padding: 5px; background-color: lightgray; width: fit-content;">
+            <p>音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+            </p>
         </div>`;
     },
     choices: "NO_KEYS",
