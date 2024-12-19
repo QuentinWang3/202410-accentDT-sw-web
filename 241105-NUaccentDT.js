@@ -266,7 +266,11 @@ var prac_response = {
         phase: 'practice', //mark this part as practice session
         itemID: jsPsych.timelineVariable('ItemID'),
         stimulus_type: jsPsych.timelineVariable('type'),
-        correct_ans: jsPsych.timelineVariable('ExpAns')
+        correct_ans: jsPsych.timelineVariable('ExpAns'),
+        list: jsPsych.timelineVariable('List'),
+        content: jsPsych.timelineVariable('Content'),
+        sound1: jsPsych.timelineVariable('Sound1'),
+        sound2: jsPsych.timelineVariable('Sound2'),
     }
 };
 
