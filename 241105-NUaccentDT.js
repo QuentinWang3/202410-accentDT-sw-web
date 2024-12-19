@@ -1,18 +1,17 @@
 /*
 - goal: This JS file is designed for a accent discrimination task used to probe L2 learners' capability to differentiate different L2 English accents as well as the difference between native speakers' accent and L2 English accents.
 - created: 2024-11-05
-- modified: 2024-12-05
+- last modified: 2024-12-20
 - change log:
     2024-11-28
     - (done) preload at one time
     - (done) mark different phases (data:{phase: prac/experiment})
     2024-12-05
-    - add break time
+    - (done) add break time
     - (done) description of "訛りの発音" (accented speech)
     - (done) add informed consent
-    - add background information collection
-    TODO
-    - move experiment to github (complicated)
+    - (done) add background information collection
+    - (done) move experiment to github 
 
 */
 
