@@ -57,16 +57,20 @@ var preload = {
 };
 
 //basic information collection
+
 var name_input = {
     type: jsPsychSurveyText,
     questions: [
       {prompt: "お名前をローマ字で入力してください：", placeholder: "Meidai Taro", name: 'participant_name', required: true}
     ],
     on_finish: function(data) {
-        jsPsych.data.addProperties({
+      // 将姓名保存到全局数据中
+      jsPsych.data.addProperties({
         participant_name: data.response.participant_name
       });
-      pavlovia_finish.participantID = participant_name;
+      
+      // 动态更新 pavlovia_finish 的 participantID
+      pavlovia_finish.participantID = data.response.participant_name;
     }
   };
 
