@@ -55,6 +55,20 @@ var preload = {
     audio: all_audio_preload,
 };
 
+//basic information collection
+var name_input = {
+    type: jsPsychSurveyText,
+    questions: [
+      {prompt: "お名前をローマ字で入力してください：（e.g., MeidaiTaro）", name: 'participant_name', required: true}
+    ],
+    on_finish: function(data) {
+      // 将姓名保存到全局变量中
+      jsPsych.data.addProperties({
+        participant_name: data.response.participant_name
+      });
+    }
+  };
+
 
 //fullscreen before experiment
 var fullscreen = {
@@ -84,6 +98,8 @@ var title = {
     choices: [],
     trial_duration: 2000,
 };
+
+
 
 
 var instruction_1 = {
