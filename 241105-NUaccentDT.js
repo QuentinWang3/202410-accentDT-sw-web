@@ -117,7 +117,9 @@ var instruction_1 = {
     <p style="width:100%">
     この実験では２つの英語の音声がペアで流されます。
 
-    流された２つの音声を聞き、
+    音声の内容は少し早く見られるように設定されています。
+
+    音声の内容を見ながら、流された２つの音声を聞き、
 
     違う訛りの英語発音ペアであれば<span style="background-color: yellow;">[ F ]キー</span>を、
 
@@ -193,7 +195,7 @@ var sti_content_prac = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:  function() {
         return `
-        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        <h1 style="background-color: lightgray; padding: 10px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
         </p>`;
     },
@@ -208,7 +210,7 @@ var prac_sound1 = {
     choices: 'NO_KEYS',
     prompt: function() {
         return `
-        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        <p style="background-color: lightgray; padding: 10px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
         </p>
     <h1>練習：訛りの発音を聞いてください</h1>
@@ -223,7 +225,7 @@ var delay_prac = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:function() {
         return `
-        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        <p style="background-color: lightgray; padding: 10px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
         </p>
     <h1>練習：訛りの発音を聞いてください</h1>    
@@ -242,7 +244,7 @@ var prac_sound2 = {
     choices: 'NO_KEYS',
     prompt: function() {
         return `
-        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        <p style="background-color: lightgray; padding: 10px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
         </p>
     <h1>練習：訛りの発音を聞いてください</h1>    
@@ -257,7 +259,7 @@ var prac_response = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: function() {
         return `
-        <p style="font-size: 20px; background-color: lightgray; padding: 10px;">
+        <p style="background-color: lightgray; padding: 10px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
         </p>
     <h1>練習：弁別してください！</h1>    
