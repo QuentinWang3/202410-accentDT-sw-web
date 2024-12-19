@@ -402,6 +402,6 @@ var pavlovia_finish = {
 };
 
 
-var timeline = [pavlovia_init, preload, fullscreen, title, instruction_1, instruction_2, instruction_3, prac_trial, prac_end, main_trial, pavlovia_finish, ending,  exit_fullscreen];
+var timeline = [pavlovia_init, preload, name_input, fullscreen, title, instruction_1, instruction_2, instruction_3, prac_trial, prac_end, main_trial, pavlovia_finish, ending,  exit_fullscreen];
 
 jsPsych.run(timeline);
