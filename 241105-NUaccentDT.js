@@ -324,6 +324,10 @@ var sent_response = {
         itemID: jsPsych.timelineVariable('SentenceID'),
         stimulus_type: jsPsych.timelineVariable('type'),
         correct_ans: jsPsych.timelineVariable('ExpAns'),
+        list: jsPsych.timelineVariable('List'),
+        content: jsPsych.timelineVariable('Content'),
+        sound1: jsPsych.timelineVariable('Sound1'),
+        sound2: jsPsych.timelineVariable('Sound2'),
     },
 };
 
@@ -394,6 +398,10 @@ var word_response = {
         itemID: jsPsych.timelineVariable('WordID'),
         stimulus_type: jsPsych.timelineVariable('type'),
         correct_ans: jsPsych.timelineVariable('ExpAns'),
+        list: jsPsych.timelineVariable('List'),
+        content: jsPsych.timelineVariable('Content'),
+        sound1: jsPsych.timelineVariable('Sound1'),
+        sound2: jsPsych.timelineVariable('Sound2'),
     },
 };
 
