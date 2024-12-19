@@ -189,8 +189,9 @@ var sti_content_prac = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:  function() {
         return `
-        <div style="text-align: left; padding: 5px; background-color: lightgray; white-space: nowrap;">
-            <p>音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        <div style="text-align: left; padding: 5px; background-color: lightgray; ">
+            <p style= "white-space: nowrap; width: 500px;">
+            音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
             </p>
         </div>`;
     },
