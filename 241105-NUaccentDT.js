@@ -60,13 +60,13 @@ var preload = {
 var name_input = {
     type: jsPsychSurveyText,
     questions: [
-      {prompt: "お名前をローマ字で入力してください：（e.g., MeidaiTaro）", name: 'participant_name', required: true}
+      {prompt: "お名前をローマ字で入力してください：", placeholder: "Meidai Taro", name: 'participant_name', required: true}
     ],
     on_finish: function(data) {
-      // 将姓名保存到全局变量中
-      jsPsych.data.addProperties({
+        jsPsych.data.addProperties({
         participant_name: data.response.participant_name
       });
+      pavlovia_finish.participantID = participant_name;
     }
   };
 
@@ -398,7 +398,7 @@ var exit_fullscreen = {
 var pavlovia_finish = {
     type: jsPsychPavlovia,
     command: "finish",
-    participantID: participant_name,
+    participantID: "participant_name",
 };
 
 
