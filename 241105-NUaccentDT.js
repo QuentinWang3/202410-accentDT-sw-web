@@ -61,7 +61,7 @@ var preload = {
 var name_input = {
     type: jsPsychSurveyText,
     questions: [
-      {prompt: '<span style="width: 100%;">お名前をローマ字で入力してください：</span>', placeholder: "Meidai Taro", name: 'participant_name', required: true}
+      {prompt: '<span style="width: 120%;">お名前をローマ字で入力してください：</span>', placeholder: "Meidai Taro", name: 'participant_name', required: true}
     ],
     on_finish: function(data) {
       // 将姓名保存到全局数据中
@@ -204,8 +204,8 @@ var prac_sound1 = {
     choices: 'NO_KEYS',
     prompt: function() {
         return `
-        <p style="text-align: left; background-color: lightgray; padding: 5px;">
-        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>`},
     trial_ends_after_audio: true,
 };
@@ -215,8 +215,8 @@ var delay_prac = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:function() {
         return `
-        <p style="text-align: left; background-color: lightgray; padding: 5px;">
-        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>`},
     choices: 'NO_KEYS',
     trial_duration: 500,
@@ -230,8 +230,8 @@ var prac_sound2 = {
     choices: 'NO_KEYS',
     prompt: function() {
         return `
-        <p style="text-align: left; background-color: lightgray; padding: 5px;">
-        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>`},
     trial_ends_after_audio: true
 };
@@ -241,8 +241,8 @@ var prac_response = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: function() {
         return `
-        <p style="text-align: left; background-color: lightgray; padding: 5px;">
-        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
+        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>
     <p style="width: 100%"> 
     違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
