@@ -215,7 +215,7 @@ var prac_sound1 = {
 };
 
 //Delay in prac
-var delay = {
+var delay_prac = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:function() {
         return `
