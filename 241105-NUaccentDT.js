@@ -21,7 +21,6 @@
 const jsPsych = initJsPsych({
     use_webaudio:false,
     on_finish: function(){
-        jsPsych.data.displayData();
     },
 });
 
@@ -36,14 +35,19 @@ prac_timeline_variable.map(function(obj){
     return [obj.Sound1, obj.Sound2];
 }).flat(1);
 
-var main_audio_preload = 
-main_timeline_variable.map(function(obj){
+var sent_audio_preload = 
+sent_timeline_variable.map(function(obj){
+    return [obj.Sound1, obj.Sound2];
+}).flat(1);
+
+var word_audio_preload = 
+word_timeline_variable.map(function(obj){
     return [obj.Sound1, obj.Sound2];
 }).flat(1);
 
 //done - preload practice & main trial at the same time
     //concatenate two preload dataset
-var all_audio_preload = prac_audio_preload.concat(main_audio_preload);
+var all_audio_preload = prac_audio_preload.concat(sent_audio_preload, word_audio_preload);
 
 
 var preload = {
