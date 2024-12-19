@@ -372,7 +372,7 @@ var breaktime = {
 };
 
 //after break
-var breaktime = {
+var after_break = {
     type: jsPsychHtmlButtonResponse,
     stimulus: `
     <h1>
