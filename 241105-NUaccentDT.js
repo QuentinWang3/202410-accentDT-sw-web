@@ -136,7 +136,7 @@ var instruction_2 = {
     <h1>
     インストラクション：訛りの発音とは？
     </h1>
-    <p>
+    <p style="width: 70%">
     以下の内容に対するご理解は、本実験の結果に重要な影響がありますので、読んでいただけますよう、よろしくお願いいたします。
 
     本実験では、「訛り」というのは、母語話者の発音のバリエーションではなく、母語が異なる話者が持つ「母語訛り」のことを指しています。母語話者の発音は地域によって、多くのバリエーションが存在しますが、本研究が重視しているのは母語話者と非母語話者の英語発音の違い、かつ母語が異なる非母語話者間の違いです。
@@ -189,7 +189,7 @@ var sti_content_prac = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:  function() {
         return `
-        <div style="text-align: left; padding: 5px; background-color: lightgray; width: fit-content;">
+        <div style="text-align: left; padding: 5px; background-color: lightgray; white-space: nowrap;">
             <p>音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
             </p>
         </div>`;
@@ -205,10 +205,9 @@ var prac_sound1 = {
     choices: 'NO_KEYS',
     prompt: function() {
         return `
-        <p style="text-align: left; background-color: lightgray; padding: 10px;">
+        <p style="text-align: left; background-color: lightgray; padding: 5px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
         </p>
-    <h1>練習：訛りの発音を聞いてください</h1>
     <p style="width: 100%"> 
     違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
     </p>`},
@@ -220,10 +219,9 @@ var delay_prac = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:function() {
         return `
-        <p style="text-align: left; background-color: lightgray; padding: 10px;">
+        <p style="text-align: left; background-color: lightgray; padding: 5px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
         </p>
-    <h1>練習：訛りの発音を聞いてください</h1>    
     <p style="width: 100%"> 
     違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
     </p>`},
@@ -239,10 +237,9 @@ var prac_sound2 = {
     choices: 'NO_KEYS',
     prompt: function() {
         return `
-        <p style="text-align: left; background-color: lightgray; padding: 10px;">
+        <p style="text-align: left; background-color: lightgray; padding: 5px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
         </p>
-    <h1>練習：訛りの発音を聞いてください</h1>    
     <p style="width: 100%"> 
     違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
     </p>`},
@@ -254,10 +251,9 @@ var prac_response = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: function() {
         return `
-        <p style="text-align: left; background-color: lightgray; padding: 10px;">
+        <p style="text-align: left; background-color: lightgray; padding: 5px;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」
         </p>
-    <h1>練習：弁別してください！</h1>    
     <p style="width: 100%"> 
     違う訛りの英語発音であれば<span style="background-color: yellow;">[ F ]キー</span>を、同じ訛りの英語発音であれば <span style="background-color: yellow;">[ J ]キー</span>を<u>押してください</u>。
     </p>`},
