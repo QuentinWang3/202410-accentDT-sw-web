@@ -326,7 +326,7 @@ var main_response = {
 
 var main_trial = {
     timeline: [fixation, main_sound1, main_sound2, main_response],
-    timeline_variables: main_timeline_variable,
+    timeline_variables: sent_timeline_variable,
     randomize_order: true,
 };
 
