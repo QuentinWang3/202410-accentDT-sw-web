@@ -1818,7 +1818,7 @@ var sent_timeline_variable = [
     "Content": "School got out early today.",
     "ListNo": 1,
     "SentenceID": 153,
-    "Sound1": "stimuli/FAS_M5M-HINT-07-01.wav",
+    "Sound1": "stimuli/FAS_M6M-HINT-07-01.wav",
     "Sound2": "stimuli/FAS_J1M-HINT-07-01.wav",
     "type": "MJ",
     "ExpAns": "f"
@@ -1829,7 +1829,7 @@ var sent_timeline_variable = [
     "Content": "They're running past the house.",
     "ListNo": 2,
     "SentenceID": 154,
-    "Sound1": "stimuli/FAS_M5M-HINT-07-02.wav",
+    "Sound1": "stimuli/FAS_M6M-HINT-07-02.wav",
     "Sound2": "stimuli/FAS_J1M-HINT-07-02.wav",
     "type": "MJ",
     "ExpAns": "f"
@@ -1840,7 +1840,7 @@ var sent_timeline_variable = [
     "Content": "The boy ran away from school.",
     "ListNo": 3,
     "SentenceID": 155,
-    "Sound1": "stimuli/FAS_M5M-HINT-07-03.wav",
+    "Sound1": "stimuli/FAS_M6M-HINT-07-03.wav",
     "Sound2": "stimuli/FAS_J1M-HINT-07-03.wav",
     "type": "MJ",
     "ExpAns": "f"
@@ -1852,7 +1852,7 @@ var sent_timeline_variable = [
     "ListNo": 4,
     "SentenceID": 156,
     "Sound1": "stimuli/FAS_J1M-HINT-07-04.wav",
-    "Sound2": "stimuli/FAS_M5M-HINT-07-04.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-07-04.wav",
     "type": "MJ",
     "ExpAns": "f"
   },
@@ -1862,7 +1862,7 @@ var sent_timeline_variable = [
     "Content": "The two children were laughing.",
     "ListNo": 5,
     "SentenceID": 157,
-    "Sound1": "stimuli/FAS_M5M-HINT-07-05.wav",
+    "Sound1": "stimuli/FAS_M6M-HINT-07-05.wav",
     "Sound2": "stimuli/FAS_J2M-HINT-07-05.wav",
     "type": "MJ",
     "ExpAns": "f"
@@ -1874,7 +1874,7 @@ var sent_timeline_variable = [
     "ListNo": 6,
     "SentenceID": 158,
     "Sound1": "stimuli/FAS_J2M-HINT-07-06.wav",
-    "Sound2": "stimuli/FAS_M5M-HINT-07-06.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-07-06.wav",
     "type": "MJ",
     "ExpAns": "f"
   },
@@ -1885,7 +1885,7 @@ var sent_timeline_variable = [
     "ListNo": 7,
     "SentenceID": 159,
     "Sound1": "stimuli/FAS_J2M-HINT-07-07.wav",
-    "Sound2": "stimuli/FAS_M5M-HINT-07-07.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-07-07.wav",
     "type": "MJ",
     "ExpAns": "f"
   },
@@ -1895,7 +1895,7 @@ var sent_timeline_variable = [
     "Content": "She found her purse in the trash.",
     "ListNo": 8,
     "SentenceID": 160,
-    "Sound1": "stimuli/FAS_M5M-HINT-07-08.wav",
+    "Sound1": "stimuli/FAS_M6M-HINT-07-08.wav",
     "Sound2": "stimuli/FAS_J2M-HINT-07-08.wav",
     "type": "MJ",
     "ExpAns": "f"
@@ -1995,7 +1995,7 @@ var sent_timeline_variable = [
     "ListNo": 7,
     "SentenceID": 169,
     "Sound1": "stimuli/FAS_K7M-HINT-08-07.wav",
-    "Sound2": "stimuli/FAS_M5M-HINT-08-07.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-08-07.wav",
     "type": "MK",
     "ExpAns": "f"
   },
@@ -2006,7 +2006,7 @@ var sent_timeline_variable = [
     "ListNo": 8,
     "SentenceID": 170,
     "Sound1": "stimuli/FAS_K7M-HINT-08-08.wav",
-    "Sound2": "stimuli/FAS_M5M-HINT-08-08.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-08-08.wav",
     "type": "MK",
     "ExpAns": "f"
   },
@@ -2017,7 +2017,7 @@ var sent_timeline_variable = [
     "ListNo": 9,
     "SentenceID": 171,
     "Sound1": "stimuli/FAS_K7M-HINT-08-09.wav",
-    "Sound2": "stimuli/FAS_M5M-HINT-08-09.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-08-09.wav",
     "type": "MK",
     "ExpAns": "f"
   },
@@ -2027,7 +2027,7 @@ var sent_timeline_variable = [
     "Content": "The road goes up the hill.",
     "ListNo": 10,
     "SentenceID": 172,
-    "Sound1": "stimuli/FAS_M5M-HINT-08-10.wav",
+    "Sound1": "stimuli/FAS_M6M-HINT-08-10.wav",
     "Sound2": "stimuli/FAS_K7M-HINT-08-10.wav",
     "type": "MK",
     "ExpAns": "f"
@@ -2039,7 +2039,7 @@ var sent_timeline_variable = [
     "ListNo": 1,
     "SentenceID": 173,
     "Sound1": "stimuli/FAS_K9M-HINT-09-01.wav",
-    "Sound2": "stimuli/FAS_M5M-HINT-09-01.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-09-01.wav",
     "type": "MK",
     "ExpAns": "f"
   },
@@ -2050,7 +2050,7 @@ var sent_timeline_variable = [
     "ListNo": 2,
     "SentenceID": 174,
     "Sound1": "stimuli/FAS_K9M-HINT-09-02.wav",
-    "Sound2": "stimuli/FAS_M5M-HINT-09-02.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-09-02.wav",
     "type": "MK",
     "ExpAns": "f"
   },
@@ -2060,7 +2060,7 @@ var sent_timeline_variable = [
     "Content": "The sharp knife was dangerous.",
     "ListNo": 3,
     "SentenceID": 175,
-    "Sound1": "stimuli/FAS_M5M-HINT-09-03.wav",
+    "Sound1": "stimuli/FAS_M6M-HINT-09-03.wav",
     "Sound2": "stimuli/FAS_K9M-HINT-09-03.wav",
     "type": "MK",
     "ExpAns": "f"
@@ -2072,7 +2072,7 @@ var sent_timeline_variable = [
     "ListNo": 4,
     "SentenceID": 176,
     "Sound1": "stimuli/FAS_K9M-HINT-09-04.wav",
-    "Sound2": "stimuli/FAS_M5M-HINT-09-04.wav",
+    "Sound2": "stimuli/FAS_M6M-HINT-09-04.wav",
     "type": "MK",
     "ExpAns": "f"
   },
