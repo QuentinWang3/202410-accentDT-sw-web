@@ -64,7 +64,7 @@ var name_input = {
     questions: [
       {prompt: `
       <div style="display: flex; align-items: center;">
-        <span style="white-space: nowrap; margin-right: 10px;">お名前をローマ字で入力してください：</span>
+        <span style="white-space: nowrap; margin-right: 10px; font-size: 30px">お名前をローマ字で入力してください：</span>
       </div>`, placeholder: "Yamada Taro", name: 'participant_name', required: true}
     ],
     on_finish: function(data) {
@@ -193,7 +193,7 @@ var sti_content = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:  function() {
         return `
-            <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+            <p style= "white-space: nowrap;text-align: center; padding: 20px; background-color: lightgray;">
             音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
             </p>`;
     },
@@ -208,7 +208,7 @@ var sound1 = {
     choices: 'NO_KEYS',
     prompt: function() {
         return `
-        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        <p style= "white-space: nowrap;text-align: center; padding: 20px; background-color: lightgray;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>`},
     trial_ends_after_audio: true,
@@ -219,7 +219,7 @@ var delay = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus:function() {
         return `
-        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        <p style= "white-space: nowrap;text-align: center; padding: 20px; background-color: lightgray;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>`},
     choices: 'NO_KEYS',
@@ -234,7 +234,7 @@ var sound2 = {
     choices: 'NO_KEYS',
     prompt: function() {
         return `
-        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        <p style= "white-space: nowrap;text-align: center; padding: 20px; background-color: lightgray;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>`},
     trial_ends_after_audio: true
@@ -245,7 +245,7 @@ var prac_response = {
     type: jsPsychHtmlKeyboardResponse,
     stimulus: function() {
         return `
-        <p style= "white-space: nowrap;text-align: left; padding: 20px; background-color: lightgray;">
+        <p style= "white-space: nowrap;text-align: center; padding: 20px; background-color: lightgray;">
         音声の内容は「<strong>${jsPsych.timelineVariable('Content')}</strong>」 
         </p>
     <p style="width: 100%"> 
