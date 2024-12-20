@@ -78,6 +78,56 @@ var name_input = {
   };
 
 
+//volume test trial
+var vol_test_audio = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus:`
+    <h1>
+    実験を始める前に、音量調節をお願いいたします。
+    </h1>
+    <p>
+    適切な音量に調節するまで、下の「再生」ボタンを押して、音量を確認しながら調節してください。
+    </p>
+
+    <audio id="vol-test-stimulus" src="stimuli/word/FAS_E1M-LNTW-01-16.wav"></audio>
+    <button id="play-button">再生する</button>
+    
+    <p>
+    
+    音量が自分の好みになるまで何回でも再生可能です。
+    「この音量で一番聞き取れやすくて、負担がない」と自分にとって最適な音量に調節できたら、
+    
+    下のボタンを押して、次のページで聞いた内容を入力してください。
+    音量がちゃんと聞こえるように調節したと確認のためなので、少し間違っていても構いません。
+    </p>
+  `,
+  choices: ['入力画面に進む'],
+  on_load: function() {
+    var audioElement = document.getElementById('vol-test-stimulus');
+    var playButton = document.getElementById('play-button');
+
+    playButton.addEventListener('click', function() {
+      audioElement.play();
+    });
+  }
+};
+  
+var vol_test_input = {
+    type: jsPsychSurveyText,
+    questions: [
+      {prompt: `
+      <div style="display: flex; align-items: center;">
+        <span style="white-space: nowrap; margin-right: 10px; font-size: 30px; line-height: 1.5">
+        聞いた英単語を入力してください：
+        </span>
+      </div>`, placeholder:"the English word you've heard", name: "vol-word", required: true, rows: 3, columns: 50}
+    ]
+};
+
+var vol_test = {
+    timeline: [vol_test_audio, vol_test_input],
+};
+
 //fullscreen before experiment
 var fullscreen = {
     type: jsPsychFullscreen,
@@ -170,7 +220,17 @@ var instruction_3 = {
     準備ができましたら、 [ J ] キーを押して練習へ進んでください。
     </p>
     `,
-    choices: ['練習のセッションへ']
+    choices: ['練習のセッションへ'],
+    data: {
+        phase: 'intro',
+        deviceInfo: {
+            userAgent: navigator.userAgent,
+            platform: navigator.platform,
+            language: navigator.language,
+            screenResolution: `${screen.width}x${screen.height}`,
+            windowSize: `${window.innerWidth}x${window.innerHeight}`
+        }
+    }
 };
 
 
@@ -448,6 +508,6 @@ var pavlovia_finish = {
 };
 
 
-var timeline = [pavlovia_init, preload, name_input, fullscreen, title, instruction_1, instruction_2, instruction_3, prac_trial, prac_end, sent_trial, breaktime, after_break, word_trial, pavlovia_finish, ending,  exit_fullscreen];
+var timeline = [pavlovia_init, preload, name_input, vol_test, fullscreen, title, instruction_1, instruction_2, instruction_3, prac_trial, prac_end, sent_trial, breaktime, after_break, word_trial, pavlovia_finish, ending,  exit_fullscreen];
 
 jsPsych.run(timeline);
