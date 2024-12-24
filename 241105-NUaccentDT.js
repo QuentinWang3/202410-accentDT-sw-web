@@ -92,7 +92,6 @@ var vol_test_audio = {
     </p>
     <audio id="vol-test-stimulus" src="stimuli/word/FAS_E1M-LNTW-01-16.wav"></audio>
     <button id="play-button">再生する</button>
-    
     <p>
     音量が自分の好みになるまで何回でも再生可能です。
     「この音量で一番聞き取れやすくて、負担がない」と自分にとって最適な音量に調節できたら、
