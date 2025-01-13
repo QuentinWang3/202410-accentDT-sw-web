@@ -1,0 +1,40 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: dprime ~ signal * phase + E_ifNNS * E_exp_past + ifws + rt_m +  
+    self_prof + (1 | pID)
+   Data: lmm_lang
+
+REML criterion at convergence: 554.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.5277 -0.5702 -0.0899  0.3184  4.2437 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ pID      (Intercept) 0.0738   0.2717  
+ Residual             0.4985   0.7060  
+Number of obs: 228, groups:  pID, 19
+
+Fixed effects:
+                     Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)         8.199e-01  2.957e-01  6.839e+01   2.773 0.007160 ** 
+signalEJ            2.176e-01  2.291e-01  1.974e+02   0.950 0.343233    
+signalEK           -1.388e-02  2.291e-01  1.974e+02  -0.061 0.951748    
+signalMJ            1.842e-01  2.292e-01  1.975e+02   0.804 0.422372    
+signalMK           -2.701e-01  2.292e-01  1.975e+02  -1.178 0.240088    
+signalJK           -1.754e-01  2.292e-01  1.975e+02  -0.765 0.444963    
+phaseword           1.809e+00  2.312e-01  1.997e+02   7.822 2.94e-13 ***
+E_ifNNS             1.503e-01  1.987e-01  1.497e+01   0.756 0.461325    
+E_exp_past          2.642e-05  7.416e-04  1.269e+01   0.036 0.972138    
+ifwssw              1.716e-01  1.893e-01  1.287e+01   0.907 0.381209    
+rt_m               -9.383e-04  2.957e-04  8.697e+01  -3.173 0.002083 ** 
+self_prof          -6.156e-02  1.113e-01  1.297e+01  -0.553 0.589606    
+signalEJ:phaseword -7.466e-01  3.240e-01  1.974e+02  -2.304 0.022236 *  
+signalEK:phaseword -1.131e+00  3.240e-01  1.974e+02  -3.491 0.000593 ***
+signalMJ:phaseword -1.851e+00  3.241e-01  1.975e+02  -5.712 4.07e-08 ***
+signalMK:phaseword -1.737e+00  3.248e-01  1.980e+02  -5.350 2.42e-07 ***
+signalJK:phaseword -1.781e+00  3.240e-01  1.974e+02  -5.499 1.18e-07 ***
+E_ifNNS:E_exp_past  3.440e-03  2.133e-03  1.268e+01   1.613 0.131449    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] TRUE
